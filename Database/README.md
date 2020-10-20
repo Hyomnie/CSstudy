@@ -79,4 +79,8 @@ Serializable (레벨 3)
 #### 낮은 단계 isolation level을 사용할 때 발생하는 문제
 dirty read: 커밋되지 않은 수정중인 데이터를 다른 트랜잭션에서 읽을 수 있도록 허용할 때 발생하는 현상.<br>
 non-repeatable read<br>
-phantom read<br>
+phantom read<br>'
+
+#### 참고자료
+https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Database#transaction
+https://gyoogle.dev/blog/computer-science/data-base/Transaction%20Isolation%20Level.html
