@@ -82,5 +82,5 @@ non-repeatable read<br>
 phantom read<br>'
 
 #### 참고자료
-https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Database#transaction
+https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Database#transaction <br>
 https://gyoogle.dev/blog/computer-science/data-base/Transaction%20Isolation%20Level.html
