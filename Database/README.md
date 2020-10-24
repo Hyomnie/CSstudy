@@ -67,19 +67,19 @@ SELECT 질의의 조건에는 부호(<>) 연산도 포함이 된다. hash table 
 * Durability(지속성): 트랜잭션이 성공적으로 완료되어 커밋되고 나면, 해당 트랜잭션에 의한 모든 변경은 향후에 어떤 소프트웨어나 하드웨어 장애가 발생되더라도 보존되어야 한다.
 
 #### Transaction Isolation Level
-Read Uncommitted (레벨 0)
+* Read Uncommitted (레벨 0)<br>
 SELECT 문장이 수행되는 동안 해당 데이터에 Shared Lock이 걸리지 않는 계층. 데이터베이스의 일관성을 유지하는 것이 불가능함
-Read Committed (레벨 1)
+* Read Committed (레벨 1)<br>
 SELECT 문장이 수행되는 동안 해당 데이터에 Shared Lock이 걸리는 계층. Commit이 이루어진 트랜잭션만 조회 가능. SQL 서버가 Default로 사용하는 Isolation Level.
-Repeatable Read (레벨 2)
+* Repeatable Read (레벨 2)<br>
 트랜잭션이 완료될 때까지 SELECT 문장이 사용하는 모든 데이터에 Shared Lock이 걸리는 계층. 트랜잭션이 범위 내에서 조회한 데이터 내용이 항상 동일함을 보장함.
-Serializable (레벨 3)
+* Serializable (레벨 3)<br>
 완벽한 읽기 일관성 모드. 다른 사용자는 트랜잭션 영역에 해당되는 데이터에 대한 수정 및 입력 불가능.
 
 #### 낮은 단계 isolation level을 사용할 때 발생하는 문제
-dirty read: 커밋되지 않은 수정중인 데이터를 다른 트랜잭션에서 읽을 수 있도록 허용할 때 발생하는 현상.<br>
-non-repeatable read<br>
-phantom read<br>'
+* dirty read: 커밋되지 않은 수정중인 데이터를 다른 트랜잭션에서 읽을 수 있도록 허용할 때 발생하는 현상.<br>
+* non-repeatable read<br>
+* phantom read<br>'
 
 #### 참고자료
 https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Database#transaction <br>
